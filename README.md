@@ -57,7 +57,7 @@ Contributions are welcome! If you have suggestions for improvements or want to a
 
 ## Contact
 
-For any inquiries or feedback, please reach out at [your-email@example.com](mailto:satyampriyanshu91@example.com).
+For any inquiries or feedback, please reach out at [your-email@example.com](mailto:satyampriyanshu91@gmail.com).
 
 ---
 
