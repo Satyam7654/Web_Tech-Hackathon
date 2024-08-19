@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    <div class="loading_body">
+        <div class="doctor_loading">
+
+        </div>
+    </div>
+
+    <!-- Loading Bar -->
+
+    <div class="loading-bar" id="loadingBar"></div>
+
+    <!-- Menu Icon -->
+
+    <div class="menu-btn">
+        <img src="menu.png" alt="menu">
+
+    </div>
+
+    <!-- Navigation Bar -->
+
+    <div class="navbar">
+        <div class="brand">
+            E-Vaidya
+            <div class="slogan">...Inspired by Vedas...</div>
+
+        </div>
+        <div class="card">
+        </div>
+    </div>
+
+    <!-- Function Bar -->
+
+    <div class="fn_bar">
+        <div class="fn_btn"><a href="index.html">Home</a></div>
+        <div class="fn_btn"><a href="#">About</a></div>
+        <div class="fn_btn"><a href="vision.html">Vision</a></div>
+        <div class="fn_btn"><a href="features.html">Features</a></div>
+        <div class="fn_btn"><a href="vision.html">Contact</a></div>
+    </div>
+
+    <!-- main blind container -->
+    <div class="feature_body">
+        <p id="para">Color Blind Test</p>
+        <div class="blind_image">
+            <div class="numbers" id="i1"></div>
+            <label for="numbers1">Enter number:</label>
+            <input type="text" id="numbers1" placeholder="Enter number">
+            <span id="blindSpan"></span>
+        </div>
+        <div class="blind_image">
+            <div class="numbers" id="i2"></div>
+            <label for="numbers2">Enter number:</label>
+            <input type="text" id="numbers2" placeholder="Enter number">
+            <span id="blindSpan"></span>
+        </div>
+        <div class="blind_image">
+            <div class="numbers" id="i3"></div>
+            <label for="numbers3">Enter number:</label>
+            <input type="text" id="numbers3" placeholder="Enter number">
+            <span id="blindSpan"></span>
+        </div>
+        <div class="blind_image">
+            <div class="numbers" id="i4"></div>
+            <label for="numbers4">Enter number:</label>
+            <input type="text" id="numbers4" placeholder="Enter number">
+            <span id="blindSpan"></span>
+        </div>
+        <div class="blind_image">
+            <div class="numbers" id="i5"></div>
+            <label for="numbers5">Enter number:</label>
+            <input type="text" id="numbers5" placeholder="Enter number">
+            <span id="blindSpan"></span>
+        </div>
+    </div>
+    <div id="blindCheck">
+        <button id="Check">Check</button>
+        <div class="ifColorBlind"></div>
+    </div>
+
+
+    <!-- Menu Content -->
+
+    <div class="sideBar">
+        <div class="childbar">
+            <span id="Home"><a href="index.html">Home</a></span>
+            <span id="Home"><a href="#">About</a></span>
+            <span id="Home"><a href="vision.html">Vision</a></span>
+            <span id="Home"><a href="features.html">Features</a></span>
+            <span id="Home"><a href="vision.html">Contact</a></span>
+        </div>
+    </div>
+
+    <!-- Chat bot  -->
+    <div class="bot_icon">
+
+    </div>
+    <div class="bot_container">
+        <div class="header">
+            E-Vaidya
+        </div>
+        <!-- Message Container -->
+        <div id="message_container">
+            <!-- User message -->
+            
+            <!-- Chat bot message -->
+            
+        </div>
+
+        <div class="input">
+            <input type="text" id="input" placeholder="  Ask Question" >
+            <span class="material-symbols-outlined">
+                <img src="send button.webp" alt="#" height="19px" id="send_button">
+            </span>
+        </div>
+    </div>
+    <!-- about_colorblind starts -->
+
+    <div class="about_colorblind">
+
+        <img src="color-blind-test.webp" alt="#" height="200px">    
+        <div class="end_main_child">
+            <h2>Color Blindness</h2>
+            <p id="paratext">
+                <b> "Color blindness isn't a lack of vision but a different perspective—seeing the world through a
+                    palette of shades that others might overlook." </b><br><br>
+
+                Color blindness is a vision deficiency where individuals struggle to distinguish certain colors,
+                typically red and green. This condition results from the absence or malfunction of color-sensitive cells
+                in the eye, known as cones. While most cases are inherited and present from birth, color blindness can
+                also develop due to aging, injury, or disease. It is more common in males, affecting about 8% of men and
+                0.5% of women globally. Though there is no cure, tools like color filters and special lenses can help
+                individuals manage the challenges associated with color blindness.
+            </p>
+        </div>
+
+    </div>
+    <br><br>
+
+    <!-- about_colorblind starts -->
+
+    <script>
+        
+document.addEventListener("DOMContentLoaded", function () {
+  const blindButton = document.getElementById('Check');
+    blindButton.addEventListener("click", () => {
+      let count = 0;
+      const score = document.getElementsByClassName('ifColorBlind')[0];
+
+      const numbers = [
+        { value: '8', elementId: 'numbers1' },
+        { value: '45', elementId: 'numbers2' },
+        { value: '15', elementId: 'numbers3' },
+        { value: '73', elementId: 'numbers4' },
+        { value: '16', elementId: 'numbers5' }
+      ];
+
+      numbers.forEach(num => {
+        const inputElement = document.getElementById(num.elementId);
+
+        if (inputElement.value == num.value) {
+          inputElement.style.borderColor = 'green';
+          count++;
+        } else {
+          inputElement.style.borderColor = 'red';
+          // Optionally display a message beside the input field
+          const errorMessage = document.getElementById('blindSpan');
+          errorMessage.style.color = 'red';
+          errorMessage.style.position = 'relative';
+          //   errorMessage.innerText = 'Incorrect';
+          //   inputElement.parentNode.appendChild(errorMessage);
+          
+        }
+      });
+
+      const scorePercentage = (count / numbers.length) * 100;
+
+      score.innerHTML = `
+            
+            <p><strong>Score: </strong>${scorePercentage}% </p>
+            <p><strong>Result:</strong> ${count >= 3 ? 'Congratulations!!! You are not Color Blind' : 'You need to Consult a Doctor!!'}</p>
+        `;
+    });
+
+});
+    </script>
+    <script src="bot.js"></script>
+    <script src="script.js"></script>
+</body>
+<footer>© 2024 - 2024 E-Vadya | Designed & Developed by Satyam Priyanshu, Rohit Gupta, Ayush Verma, Webmaster, BIT
+    Mesra
+    All Rights Reserved.</footer>
+
+</html>

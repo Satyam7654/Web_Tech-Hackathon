@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" -->
+        <!-- href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+</head>
+
+<body>
+    <div class="loading_body">
+        <div class="doctor_loading">
+        
+        </div>
+    </div>
+
+    <div class="loading-bar" id="loadingBar"></div>
+
+
+    <!-- Menu Icon -->
+
+    <div class="menu-btn">
+        <img src="menu.png" alt="menu">
+ 
+     </div>
+    <div class="navbar">
+        <div class="brand">
+            E-Vaidya
+            <div class="slogan">...Inspired by Vedas...</div>
+
+        </div>
+        <div class="card">
+        </div>
+    </div>
+    <div class="fn_bar">
+        <div class="fn_btn"><a href="index.html">Home</a></div>
+        <div class="fn_btn"><a href="About.html">About</a></div>
+        <div class="fn_btn"><a href="vision.html">Vision</a></div>
+        <div class="fn_btn"><a href="features.html">Features</a></div>
+        <div class="fn_btn"><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="feature_body">
+        <div class="img_r1">
+            <div>
+                <a href="bmi.html" >
+                <img class="HI1"
+                    src="https://static.vecteezy.com/ti/gratis-vektor/p1/10952601-body-mass-index-klassifikation-von-bmi-illustration-vektor.jpg"
+                    alt="" height="120px">
+                <b>BMI Index</b></a>
+            </div>
+
+            <div>
+                <a href="colorblind.html">
+                <img
+                src="color-blind-logo.jpg"
+                alt="" height="120px">
+                <b>Color Blind Test</b></a>
+            </div>
+
+            <div>
+                <a href="Medicine.html">
+                <img
+                    src="Medicine-logo.jpg"
+                    alt="" height="120px">
+                <b>Medicine Info</b></a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="sideBar">
+        <div class="childbar">
+            <span id="Home"><a href="index.html">Home</a></span>
+            <span id="Home"><a href="About.html">About</a></span>
+            <span id="Home"><a href="vision.html">Vision</a></span>
+            <span id="Home"><a href="features.html">Features</a></span>
+            <span id="Home"><a href="contact.html">Contact</a></span>
+        </div>
+    </div>
+
+    <!-- form -->
+
+    <div id="bodyFatFormContainer" style="display: none;">
+        <form id="bodyFatForm">
+            <label for="sex">Sex:</label>
+            <select id="sex" name="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br><br>
+        
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+        
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required><br><br>
+        
+            <label for="waist">Waist (cm):</label>
+            <input type="number" id="waist" name="waist" required><br><br>
+        
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required><br><br>
+        
+            <label for="hip">Hip (cm):</label>
+            <input type="number" id="hip" name="hip"><br><br>
+        
+            <button type="button" id="calculateBtn">Calculate Body Fat</button>
+        </form>
+         
+        <h3 id="result1"></h3>
+        <h3 id="result2"></h3>
+    </div>
+
+    <!-- form -->
+
+
+    <!-- Chat bot  -->
+    <div class="bot_icon">
+
+    </div>
+    <div class="bot_container">
+        <div class="header">
+            E-Vaidya
+        </div>
+        <!-- Message Container -->
+        <div id="message_container">
+            <!-- User message -->
+            
+            <!-- Chat bot message -->
+            
+        </div>
+
+        <div class="input">
+            <input type="text" id="input" placeholder="  Ask Question" >
+            <span class="material-symbols-outlined">
+                <img src="send button.webp" alt="#" height="19px" id="send_button">
+            </span>
+        </div>
+    </div>
+    
+
+    <script src="bot.js"></script>
+    <script src="script.js"></script>
+
+    
+</body>
+<footer>© 2024 - 2024 E-Vadya | Designed & Developed by Satyam Priyanshu, Rohit Gupta, Ayush Verma, Webmaster, BIT
+    Mesra
+    All Rights Reserved.</footer>
+
+</html>

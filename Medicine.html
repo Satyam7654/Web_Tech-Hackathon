@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" -->
+        <!-- href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+    <style>
+    .medicine_container {
+    padding-left:20px ;
+    padding-right:20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    gap:2rem;
+    flex-direction: column;
+    background-image: url(https://images.unsplash.com/photo-1557683316-973673baf926?q=80&w=2029&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    transition: all 0.5s ease-in-out;
+}
+
+
+.search
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:1rem;
+    flex-direction: row;
+    transition: all 0.5s ease-in-out;
+}
+.search.search:hover
+{
+    transform: scale(1.1);
+}
+
+.medicine_container h2{
+    padding: 3%;
+    top: 40%;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    color: antiquewhite;
+    font-size: xx-large;
+}
+
+.medicine_container input[type="text"] {
+    width:60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: antiquewhite;
+}
+
+
+
+.medicine_container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color:antiquewhite;
+    background-color:  rgb(50, 50, 80);
+    cursor: pointer;
+    size: auto;
+    transition: 0.5s ease-in-out;
+}
+
+.medicine_container button:hover {
+    transform: scale(1.09);
+    text-shadow:  rgb(50, 50, 80) 1px 0 10px;
+}
+
+
+
+#results {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:1rem;
+    font-size: larger;
+    border-radius: 8px;
+    color: antiquewhite;
+    font-size: 30px;
+    transition:all 0.8s ease-in-out ;
+}
+
+#results:hover{
+    transform: scale(1.2);
+    box-shadow: 2px 1px 4px;
+}
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="loading_body">
+        <div class="doctor_loading">
+        
+        </div>
+    </div>
+    <!-- Loading Bar -->
+
+    <div class="loading-bar" id="loadingBar"></div>
+
+    <!-- Menu Icon -->
+
+    <div class="menu-btn">
+       <img src="menu.png" alt="menu">
+
+    </div>
+
+    <!-- Navigation Bar -->
+
+    <div class="navbar">
+        <div class="brand">
+            E-Vaidya
+            <div class="slogan">...Inspired by Vedas...</div>
+
+        </div>
+        <div class="card">
+        </div>
+    </div>
+
+    <!-- Function Bar -->
+
+    <div class="fn_bar">
+        <div class="fn_btn"><a href="index.html">Home</a></div>
+        <div class="fn_btn"><a href="about.html">About</a></div>
+        <div class="fn_btn"><a href="vision.html">Vision</a></div>
+        <div class="fn_btn"><a href="features.html">Features</a></div>
+        <div class="fn_btn"><a href="vision.html">Contact</a></div>
+    </div>
+
+    
+    <div class="medicine_container" >
+        <h2>Search for Medicine Information</h2>
+        <div class="search">
+            <input type="text" id="medicineInput" placeholder="Enter medicine name">
+            <button onclick="searchMedicine()">Search</button>
+        </div>
+        <div id="results" ></div>
+    </div>
+
+
+    <!-- Menu Content -->
+
+    <div class="sideBar">
+        <div class="childbar">
+            <span id="Home"><a href="index.html">Home</a></span>
+            <span id="Home"><a href="About.html">About</a></span>
+            <span id="Home"><a href="vision.html">Vision</a></span>
+            <span id="Home"><a href="features.html">Features</a></span>
+            <span id="Home"><a href="contact.html">Contact</a></span>
+        </div>
+    </div>
+
+    <!-- Chat bot  -->
+    <div class="bot_icon">
+
+    </div>
+    <div class="bot_container">
+        <div class="header">
+            E-Vaidya
+        </div>
+        <!-- Message Container -->
+        <div id="message_container">
+            <!-- User message -->
+            
+            <!-- Chat bot message -->
+            
+        </div>
+
+        <div class="input">
+            <input type="text" id="input" placeholder="  Ask Question" >
+            <span class="material-symbols-outlined">
+                <img src="send button.webp" alt="#" height="19px" id="send_button">
+            </span>
+        </div>
+    </div>
+    <script src="bot.js"></script>
+    <script src="script.js"></script>
+    <footer>© 2024 - 2024 E-Vadya | Designed & Developed by Satyam Priyanshu, Rohit Gupta, Ayush Verma, Webmaster, BIT
+        Mesra
+        All Rights Reserved.</footer>
+</body>
+
+</html>
