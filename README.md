@@ -55,9 +55,6 @@ To get started with this project, clone the repository and open the index.html f
 Contributions are welcome! If you have suggestions for improvements or want to add new features, feel free to open an issue or submit a pull request.
 
 
-## Contact
-
-For any inquiries or feedback, please reach out at [your-email@example.com](mailto:satyampriyanshu91@gmail.com).
 
 ---
 
